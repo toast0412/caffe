@@ -1,0 +1,23 @@
+$ cp Makefile.config.example Makefile,config
+$ gedit Makefile.config
+
+<Makefile.config 설정 >
+...
+# CPU-only switch (uncomment to build without GPU support).
+CPU_ONLY := 1
+
+# Whatever else you find you need goes here.
+INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial/
+LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu/hdf5/serial/
+
+
+<Makefile> opecv.v = 4.0 
+
+# Complete build flags.
+ COMMON_FLAGS += $(foreach includedir,$(INCLUDE_DIRS),-I$(includedir))
+ CXXFLAGS += -pthread -fPIC -std=c++11 $(COMMON_FLAGS) $(WARNINGS)
+ NVCCFLAGS += -ccbin=$(CXX) -Xcompiler -fPIC $(COMMON_FLAGS)
+
+
+
+
