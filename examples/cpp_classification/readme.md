@@ -49,11 +49,29 @@ image (`examples/images/cat.jpg`) using this command:
 ```
 ./build/examples/cpp_classification/classification.bin \
   models/bvlc_reference_caffenet/deploy.prototxt \
-  models/bvlc_reference_caffenet/bvlc_reference_caffenet.caffemodel \
-  data/ilsvrc12/imagenet_mean.binaryproto \
+  models/bvlc_reference_caffenet/bvlc_reference_caffenet.caffemodel \ 
+  data/ilsvrc12/imagenet_mean.binaryproto \ 
+#clssification 에서 없애 줘야됨 
   data/ilsvrc12/synset_words.txt \
+     
   examples/images/cat.jpg
 ```
+```
+./build/examples/cpp_classification/classification.bin \
+  models/bvlc_reference_caffenet/deploy.prototxt \
+  models/bvlc_reference_caffenet/bvlc_reference_caffenet.caffemodel \ 
+#  data/ilsvrc12/imagenet_mean.binaryproto \ 
+#clssification 에서 없애 줘야됨 
+  data/ilsvrc12/Label.txt \
+  examples/images/test0.jpg
+
+
+
+
+
+
+# 
+
 The output should look like this:
 ```
 ---------- Prediction for examples/images/cat.jpg ----------

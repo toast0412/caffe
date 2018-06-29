@@ -1,0 +1,1 @@
+/build/examples/cpp_classification/classification_mnist.bin examples/mnist/lenet.prototxt  examples/mnist/lenet_iter_10000.caffemodel examples/mnist/label.txt examples/mnist/test1.jpeg 
