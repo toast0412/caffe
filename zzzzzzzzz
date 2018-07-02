@@ -1,0 +1,34 @@
+./build/examples/cpp_classification/classification_mnist.bin 
+ examples/mnist/lenet.prototxt  
+ examples/mnist/lenet_iter_10000.caffemodel 
+ examples/mnist/label.txt 
+ examples/mnist/test1.jpeg 
+
+1 make all 
+
+ ./build/examples/cpp_classification/classification_mnist.bin 
+ examples/vgg_face_caffe/VGG_FACE_deploy.prototxt  
+ examples/vgg_face_caffe/VGG_FACE.caffemodel  //학습된 파라미터가 저장된 파일 
+ examples/vgg_face_caffe/names.txt 
+ examples/vgg_face_caffe/ak.png 
+
+라이브러리 마다 활용이 다름, 문제해결 능력 up 
+Froward() 함수 데이터 인풋레이어 학습 입려된 데이터를 레이어 지날때마다 학습 
+불러들인 이미지를 계산 
+
+1. Forward() 필터 갯수 레이어 이미지를 계산 다른 것들에 들어가 있음 / 위치 찾아서 넣어야됨 다 읽고나서 
+
+2. 8번째 레이어 값 
+
+step 2 
+
+./build/examples/cpp_classification/classification_vggface.bin
+ examples/vgg_face_caffe/VGG_FACE_deploy.prototxt 
+ examples/vgg_face_caffe/VGG_FACE.caffemodel examples/vgg_face_caffe/abc/ 
+ examples/vgg_face_caffe/aa.jpg
+
+
+
+
+
+

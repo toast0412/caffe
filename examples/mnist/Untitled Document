@@ -1,1 +1,17 @@
-/build/examples/cpp_classification/classification_mnist.bin examples/mnist/lenet.prototxt  examples/mnist/lenet_iter_10000.caffemodel examples/mnist/label.txt examples/mnist/test1.jpeg 
+/build/examples/cpp_classification/classification_mnist.bin 
+ examples/mnist/lenet.prototxt  
+ examples/mnist/lenet_iter_10000.caffemodel 
+ examples/mnist/label.txt 
+ examples/mnist/test1.jpeg 
+
+1 make all 
+
+
+
+
+./build/examples/vgg_face_caffe/classification_vggface.bin  
+ examples/vgg_face_caffe/VGG_FACE_deploy.prototxt  
+ examples/vgg_face_caffe/VGG_FACE.caffemodel  
+ examples/vgg_face_caffe/names.txt 
+ examples/vgg_face_caffe/ak.png 
+
