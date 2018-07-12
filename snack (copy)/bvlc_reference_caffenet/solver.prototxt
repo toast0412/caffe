@@ -1,0 +1,13 @@
+net: "snack/bvlc_reference_caffenet/train_val.prototxt"
+test_iter: 20
+test_interval: 20
+base_lr: 0.01
+lr_policy: "inv"
+gamma: 0.1
+display: 20
+max_iter: 200
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 200
+snapshot_prefix: "snack/bvlc_reference_caffenet/caffenet_train"
+solver_mode: CPU

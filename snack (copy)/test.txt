@@ -1,0 +1,8 @@
+ace/ace75.jpg 0
+ace/ace76.jpg 0
+ace/ace77.jpg 0
+ace/ace78.jpg 0
+ace/ace79.jpg 0
+ace/mong36.jpg 1
+ace/mong37.jpg 1
+ace/mong38.jpg 1

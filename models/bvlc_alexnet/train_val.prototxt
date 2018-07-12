@@ -7,13 +7,8 @@ layer {
   include {
     phase: TRAIN
   }
-  transform_param {
-    mirror: true
-    crop_size: 227
-    mean_file: "data/ilsvrc12/imagenet_mean.binaryproto"
-  }
   data_param {
-    source: "examples/imagenet/ilsvrc12_train_lmdb"
+    source: "snack/train_lmdb"
     batch_size: 256
     backend: LMDB
   }
@@ -26,13 +21,8 @@ layer {
   include {
     phase: TEST
   }
-  transform_param {
-    mirror: false
-    crop_size: 227
-    mean_file: "data/ilsvrc12/imagenet_mean.binaryproto"
-  }
   data_param {
-    source: "examples/imagenet/ilsvrc12_val_lmdb"
+    source: "snack/test_lmdb"
     batch_size: 50
     backend: LMDB
   }
@@ -52,8 +42,8 @@ layer {
   }
   convolution_param {
     num_output: 96
-    kernel_size: 11
-    stride: 4
+    kernel_size: 5
+    stride: 1
     weight_filler {
       type: "gaussian"
       std: 0.01
